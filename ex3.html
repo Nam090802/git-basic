@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            background-color: #f1f5f7;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .container__icon i {
+            color: #57c8f1;
+            font-size: 70px;
+            margin: 50px 0;
+        }
+
+        .container__title {
+            font-size: 36px;
+            font-weight: bold;
+        }       
+        
+        .container__desc {
+            text-align: justify;
+            font-size: 20px;
+            line-height: 1.4;
+            color: #000;
+            opacity: .6;
+            margin: 50px 20px;
+        }
+
+        .container__email input {
+            outline: none;
+            border: none;
+            height: 50px;
+            font-size: 20px;
+            color: #000;
+            opacity: .6;
+            padding: 20px;
+            width: 300px;
+        }
+
+        .container__btn {
+            font-size: 20px;
+            width: 300px;
+            height: 50px;
+            background-color: #57c8f1;
+            color: #f1f5f7;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 5px;
+            margin: 50px 0;
+        }
+
+        @media (min-width: 992px) {
+
+            .container {
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container__icon i {
+                font-size: 100px;
+            }
+
+            .container__title {
+                font-size: 50px;  
+            }
+
+            .container__desc {
+                font-size: 25px;
+            }
+
+            .container__email input {
+                width: 500px;
+            }
+
+            .container__btn {
+                cursor: pointer;
+                width: 200px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container__icon">
+            <i class="fa-regular fa-envelope"></i>
+        </div>
+        <div class="container__title">Get the invite</div>
+        <div class="container__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur commodi od.</div>
+        <form action="" class="container__email">
+            <input type="email" placeholder="Enter Email"> 
+        </form>
+        <div class="container__btn">REQUEST INVITE</div>
+    </div>
+</body>
+</html>

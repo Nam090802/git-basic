@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            background-image: url(./images/bai4.jpg);
+            background-size: cover;
+            width: 1000px;
+            height: 200px;
+            display: flex;
+            color: #fff;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            margin: auto;
+            margin-top: 200px;
+        }
+
+        .container__items {
+            height: 200px;
+        }
+
+        .container__items .items__icon i {
+            font-size: 30px;
+            margin: 25px 0;
+        }
+
+        .container__items .items__data {
+            font-size: 40px;
+        }
+
+        .container__items .items__name {
+            opacity: 0.7;
+            margin: 25px 0;
+        }
+
+        @media (max-width: 992px) {
+            
+            .container {
+                flex-direction: column;
+                width: 100%;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .container__items {
+                height: fit-content;
+            }
+
+            .container__items .items__icon i {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container__items">
+            <div class="items__icon">
+                <i class="fa-solid fa-globe"></i>
+            </div>
+            <div class="items__data">3297</div>
+            <div class="items__name">Foreign Followers</div>
+        </div>
+        <div class="container__items">
+            <div class="items__icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="items__data">3700</div>
+            <div class="items__name">Students Enrolled</div>
+        </div>
+        <div class="container__items">
+            <div class="items__icon">
+                <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <div class="items__data">5034</div>
+            <div class="items__name">Classes Complete</div>
+        </div>
+        <div class="container__items">
+            <div class="items__icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="items__data">1080</div>
+            <div class="items__name">Certified Teachers</div>
+        </div>
+    </div>
+</body>
+</html>

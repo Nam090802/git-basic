@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .green-color {
+            background-color: #7cef5f !important;
+        }
+
+        .container {
+            margin: 10px;
+            padding: 0 10px;
+        }
+
+        .container__items {
+            margin-bottom: 20px;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        .items__title {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .items__desc {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        .items__img img {
+            margin: 0 auto 10px; 
+            width: 100%;
+        }
+
+        .items__btn {
+            background-color: #57c8f1;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 30px;
+            color: #fff;
+            margin-bottom: 10px;
+            border: none;
+        }
+
+       
+
+        .items__btn:active {
+            opacity: 0.8;
+        }
+
+        @media (min-width: 992px) {
+            
+            .container {
+                width: 1000px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                margin: 20px auto 0;
+            }
+
+            .container__items {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin-top: 50px;
+            }
+
+            .container__items:last-child .item__content {
+                order: 2;
+            }
+
+            .container__items:last-child img {
+                order:1;
+            }
+
+            .item__content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .items__title {
+                text-align: left;
+                margin-bottom: 30px;
+            }
+
+            .items__desc {
+                margin-bottom: 30px;
+            }
+
+            .items__btn {
+                width: fit-content;
+                height: fit-content;
+                cursor: pointer;
+                border: none;
+            }
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container__items">
+            <div class="item__content">
+                <div class="items__title">A Elegant Design</div>
+                <div class="items__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <b>Harum</b> aperiam doloribus aspernatur reiciendis accusamus accusantium saepe quasi autem quaerat totam molestias rem in, dignissimos labore praesentium deserunt aliquam expedita. Iure.
+                </div>
+                <input type="button" class="items__btn" value="BLUE BUTTON WITH MODAL VIDEO"></input>
+            </div>
+            <div class="items__img">
+                <img src="./images/bai7_1.JPG" alt="">
+            </div>
+        </div>
+        <div class="container__items ">
+            <div class="item__content">
+                <div class="items__title">Pretty easy to customize</div>
+                <div class="items__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <b>Harum</b> aperiam doloribus aspernatur reiciendis accusamus accusantium saepe quasi autem quaerat totam molestias rem in, dignissimos labore praesentium deserunt aliquam expedita. Iure.
+                </div>
+                <input type="button" class="items__btn green-color" value="ANOTHER BUTTON"></input>
+            </div>
+            <div class="items__img">
+                <img src="./images/bai7_2.JPG" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

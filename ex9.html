@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            padding: 30px 20px 0;
+            text-align: center;
+        }
+
+        .container__title {
+            color: rgb(241, 218, 67);
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .container__items {
+            margin-bottom: 40px;
+        }
+
+        .items__logo img {
+            height: 100px;
+        }
+
+        .items__desc {
+            font-style: italic;
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                width: 1200px;
+                margin: 50px auto 0;
+            }
+
+            .container__title {
+                margin-bottom: 80px;
+                font-size: 50px;
+            }
+
+            .items__group {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container__title">
+            What Our Clients Say
+        </div>
+       <div class="items__group">
+            <div class="container__items">
+                <div class="items__logo">
+                    <img src="./images/bai9_2.png" alt="">
+                </div>
+                <div class="items__desc">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum deleniti, omnis ipsam reprehenderit molestias.
+                </div>
+            </div>
+            <div class="container__items">
+                <div class="items__logo">
+                    <img src="./images/bai9_4.png" alt="">
+                </div>
+                <div class="items__desc">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum deleniti, omnis ipsam reprehenderit molestias.
+                </div>
+            </div><div class="container__items">
+                <div class="items__logo">
+                    <img src="./images/bai9_1.png" alt="">
+                </div>
+                <div class="items__desc">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum deleniti, omnis ipsam reprehenderit molestias.
+                </div>
+            </div><div class="container__items">
+                <div class="items__logo">
+                    <img src="./images/bai9_3.png" alt="">
+                </div>
+                <div class="items__desc">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum deleniti, omnis ipsam reprehenderit molestias.
+                </div>
+            </div>
+       </div>
+    </div>
+</body>
+</html>

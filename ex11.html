@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container { 
+            padding: 20px;
+            margin: 50px auto 0;
+            line-height: 1.4;
+        }
+
+        .container__title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .container__form form {
+            position: relative;
+        }
+
+        .container__form .input-box {
+            outline: none;
+            padding: 10px 20px;
+            border: 2px solid #d1d0d0;
+            margin-top: 10px;
+            border-radius: 3px;
+        }
+
+        #form__input-name,
+        #form__input-email {
+            display: block;
+            width: 100%;
+        }
+
+        #form__input-email {
+            position: absolute;
+            right: 0;
+        }
+
+        #form__input-message,
+        #form__input-subject {
+            width: 100%;
+            display: block;
+        }
+
+        .form__btn {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .form__btn input {
+            background-color: rgba(20, 232, 232, .7);
+            color: #fff;
+            padding: 10px;
+            border-radius: 3px;
+            border: 1px solid rgb(33, 181, 181);
+            width: 100%;
+            height: 40px;
+            font-size: 20px;
+        }
+
+        .form__note {
+            font-size: 20px;
+            margin-top: 10px;
+            opacity: .7;
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                width: 1200px;  
+            }
+
+            #form__input-name,
+            #form__input-email {
+                display: inline-block;
+                width: 48%;
+            }
+
+            .form__btn {
+                display: inline-block;
+            }
+
+            .form__btn input {
+                width: fit-content;
+                font-size: medium;
+            }
+
+            .form__btn input:hover {
+                cursor: pointer;
+            }
+
+            .form__note {
+                position: absolute;
+                right: 0;
+                margin-top: 10px;
+                opacity: .7;
+                font-size: medium;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container__title">Get in touch with us by filling contact form below</div>
+        <div class="container__form">
+            <form action="#">
+                <input type="text" id="form__input-name" class="input-box" placeholder="*Enter your full name">
+                <input type="email" id="form__input-email" class="input-box" placeholder="*Enter your email address">
+                <input type="text" id="form__input-subject" class="input-box" placeholder="Enter your subject">
+                <textarea name="" id="form__input-message" class="input-box"  cols="30" rows="10" placeholder="*Your message here..."></textarea >
+                <div class="form__btn">
+                    <input type="button" value="Send message">
+                </div>
+                <span class="form__note">
+                    *Please fill all required form field, thanks!  
+                </span>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

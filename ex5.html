@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: max-content;
+            margin-top: 60px;
+            width: 100%;
+            padding: 0 10px;
+            
+            
+        }
+        
+        .container__title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .container__desc {
+            font-size: 18px;
+            opacity: 0.5;
+            margin: 30px 0;
+            line-height: 1.4;
+            text-align: justify;
+        }
+
+        .container__features {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        /* .features--column {
+            margin-right: 60px;
+            flex-wrap: wrap;
+        } */
+
+        .feature--row {
+            min-width: 50%;
+            padding: 0px;
+            text-align: justify;
+        }
+
+        .feature__icon i {
+            color: #bdf361;
+        }
+
+        .feature--row .feature__name {
+            font-style: 1px;
+            font-weight: bold;
+            opacity: 0.5;
+        }
+
+        @media (min-width: 992px) {
+
+            .container {
+                width: 1000px;
+                padding: 0 50px;
+            }
+
+            .container__title {
+                text-align: left;
+                font-size: 40px;
+            }
+
+            .container__desc {
+                font-size: 25px;
+            }
+
+            .container__features {
+                line-height: 1.4;
+            }
+            
+            .feature--row {
+                min-width: 30%;
+                margin: 5px;
+            }
+
+            .feature__icon i {
+                margin-right: 8px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container__title">Powerful template features</div>
+        <div class="container__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime incidunt aliquam cumque molestias expedita id nesciunt sint error illo accusamus! Et nisi illo est repellat vel aspernatur impedit rem quia.</div>
+        <div class="container__features">
+                <div class="feature--row">
+                    <span class="feature__icon">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <span class="feature__name">Custom Shortcodes</span>
+                </div>
+                <div class="feature--row">
+                    <span class="feature__icon">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <span class="feature__name">Visual Page Builder</span>
+                </div>
+                <div class="feature--row">
+                    <span class="feature__icon">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <span class="feature__name">Unlimited Shortcodes</span>              
+                </div>
+                <div class="feature--row">
+                    <span class="feature__icon">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <span class="feature__name">Responsive Theme</span>           
+                </div>
+                <div class="feature--row">
+                    <span class="feature__icon">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <span class="feature__name">Tons of Layouts</span>  
+                </div>
+            
+                <div class="feature--row">
+                    <span class="feature__icon">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <span class="feature__name">Custom Shortcodes</span>
+                </div>
+                <div class="feature--row">
+                    <span class="feature__icon">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <span class="feature__name">Visual Page Builder</span>
+                </div>
+                <div class="feature--row">
+                    <span class="feature__icon">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <span class="feature__name">Unlimited Shortcodes</span>              
+                </div>
+                <div class="feature--row">
+                    <span class="feature__icon">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <span class="feature__name">Responsive Theme</span>           
+                </div>
+                <div class="feature--row">
+                    <span class="feature__icon">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <span class="feature__name">Tons of Layouts</span>  
+                </div>
+            
+                <div class="feature--row">
+                    <span class="feature__icon">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <span class="feature__name">Custom Shortcodes</span>
+                </div>
+                <div class="feature--row">
+                    <span class="feature__icon">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <span class="feature__name">Visual Page Builder</span>
+                </div>
+                <div class="feature--row">
+                    <span class="feature__icon">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <span class="feature__name">Unlimited Shortcodes</span>              
+                </div>
+                <div class="feature--row">
+                    <span class="feature__icon">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <span class="feature__name">Responsive Theme</span>           
+                </div>
+                <div class="feature--row">
+                    <span class="feature__icon">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <span class="feature__name">Tons of Layouts</span>  
+                </div>
+        
+        </div>
+    </div>
+</body>
+</html>

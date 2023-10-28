@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            margin: 10px;
+            text-align: center;
+        }
+
+        .container__items {
+            background-color: #f3ecec;
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+        .items__icon {
+            font-size: 25px;
+            color: #57c8f1;
+            margin-top: 10px;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%; 
+            border: 3px solid #57c8f1;                  display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .items__title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .items__desc {
+            font-size: 16px;
+            line-height: 1.4;
+            opacity: .5;
+            margin: 10px 0;
+        }
+
+        @media (min-width: 992px) {
+            
+            .container {
+                display: grid;
+                margin: 0;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 20px;
+                width: 1000px;
+                margin: 100px auto 0;
+            }
+
+            .container__items {
+                margin: 0;
+            }
+
+            
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="container__items">
+            <div class="items__icon">
+                <i class="fa-solid fa-leaf"></i>
+            </div>
+            <div class="items__title">
+                UI/UX Design
+            </div>
+            <div class="items__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere assumenda ipsum placeat, dignissimos libero similique.
+            </div>
+        </div>
+        <div class="container__items">
+            <div class="items__icon">
+                <i class="fa-solid fa-tv"></i>
+            </div>
+            <div class="items__title">
+                Web Development
+            </div>
+            <div class="items__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere assumenda ipsum placeat, dignissimos libero similique.
+            </div>
+        </div><div class="container__items">
+            <div class="items__icon">
+                <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div class="items__title">
+                Branding
+            </div>
+            <div class="items__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere assumenda ipsum placeat, dignissimos libero similique.
+            </div>
+        </div><div class="container__items">
+            <div class="items__icon">
+                <i class="fa-solid fa-camera"></i>
+            </div>
+            <div class="items__title">
+                Photography
+            </div>
+            <div class="items__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere assumenda ipsum placeat, dignissimos libero similique.
+            </div>
+        </div><div class="container__items">
+            <div class="items__icon">
+                <i class="fa-brands fa-android"></i>
+            </div>
+            <div class="items__title">
+                Apps Development
+            </div>
+            <div class="items__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere assumenda ipsum placeat, dignissimos libero similique.
+            </div>
+        </div><div class="container__items">
+            <div class="items__icon">
+                <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div class="items__title">
+                Digital Marketing
+            </div>
+            <div class="items__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere assumenda ipsum placeat, dignissimos libero similique.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
